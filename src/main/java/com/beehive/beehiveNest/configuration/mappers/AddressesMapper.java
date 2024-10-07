@@ -8,6 +8,10 @@ import com.beehive.beehiveNest.model.entities.address.Address;
 import com.beehive.beehiveNest.model.entities.address.City;
 import com.beehive.beehiveNest.model.entities.address.Country;
 import com.beehive.beehiveNest.model.entities.address.State;
+import com.beehive.beehiveNest.model.forms.addresses.AddressForm;
+import com.beehive.beehiveNest.model.forms.addresses.CityForm;
+import com.beehive.beehiveNest.model.forms.addresses.CountryForm;
+import com.beehive.beehiveNest.model.forms.addresses.StateForm;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -15,6 +19,7 @@ import org.mapstruct.factory.Mappers;
 public interface AddressesMapper {
     AddressesMapper INSTANCE = Mappers.getMapper(AddressesMapper.class);
 
+    //    Entity -> Dto
     CountryDto getDto(Country entity);
 
     StateDto getDto(State entity);
@@ -23,11 +28,12 @@ public interface AddressesMapper {
 
     AddressDto getDto(Address entity);
 
-    Country getEntity(CountryDto dto);
+    //    Form -> Entity
+    Country getEntity(CountryForm form);
 
-    State getEntity(StateDto dto);
+    State getEntity(StateForm form);
 
-    City getEntity(CityDto dto);
+    City getEntity(CityForm form);
 
-    Address getEntity(AddressDto dto);
+    Address getEntity(AddressForm form);
 }
