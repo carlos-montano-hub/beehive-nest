@@ -1,4 +1,4 @@
-package com.beehive.beehive_nest;
+package com.beehive.beehiveNest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
