@@ -14,6 +14,6 @@ public class AppUserDto {
     private String name;
     private Long phoneNumber;
     private String emailAddress;
-    private Long roleId;
+    private UserRoleDto role;
 }
 

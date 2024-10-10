@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class MeasureDto {
     private Long id;
     private LocalDateTime time;
-    private Long beehiveId;
+    private BeehiveDto beehive;
     private double temperature;
     private double humidity;
     private double weight;
