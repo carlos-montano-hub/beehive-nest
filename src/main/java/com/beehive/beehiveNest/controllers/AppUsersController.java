@@ -15,6 +15,6 @@ public class AppUsersController extends BaseController<AppUserDto, AppUserForm> 
     @Autowired
     public AppUsersController(AppUsersService service) {
         super(service);  // Injecting into the BaseController
-        this.appUsersService = service;  // Injecting into the CountriesController as well
+        this.appUsersService = service;  // Injecting into the controller as well
     }
 }

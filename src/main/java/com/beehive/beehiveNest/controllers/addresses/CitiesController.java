@@ -16,6 +16,6 @@ public class CitiesController extends BaseController<CityDto, CityForm> {
     @Autowired
     public CitiesController(CitiesService citiesService) {
         super(citiesService);  // Injecting into the BaseController
-        this.citiesService = citiesService;  // Injecting into the CountriesController as well
+        this.citiesService = citiesService;  // Injecting into the controller as well
     }
 }

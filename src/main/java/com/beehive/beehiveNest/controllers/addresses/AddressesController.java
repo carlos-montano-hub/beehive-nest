@@ -16,6 +16,6 @@ public class AddressesController extends BaseController<AddressDto, AddressForm>
     @Autowired
     public AddressesController(AddressesService addressesService) {
         super(addressesService);  // Injecting into the BaseController
-        this.addressesService = addressesService;  // Injecting into the CountriesController as well
+        this.addressesService = addressesService;  // Injecting into the controller as well
     }
 }

@@ -16,6 +16,6 @@ public class CountriesController extends BaseController<CountryDto, CountryForm>
     @Autowired
     public CountriesController(CountriesService countriesService) {
         super(countriesService);  // Injecting into the BaseController
-        this.countriesService = countriesService;  // Injecting into the CountriesController as well
+        this.countriesService = countriesService;  // Injecting into the controller as well
     }
 }

@@ -63,18 +63,23 @@
 
 - Map between **Entity**, **DTO**, and **Form**.
 - Example:
-  ```java
-  public class MyEntityMapper {
 
-      public MyEntityDto toDto(MyEntity entity) {
-          // map fields from entity to DTO
-      }
+```java
 
-      public MyEntity toEntity(MyEntityForm form) {
-          // map fields from form to entity
-      }
-  }
+@Mapper(componentModel = "spring")
+public interface BeehiveMapper {
+    BeehiveMapper INSTANCE = Mappers.getMapper(BeehiveMapper.class);
+
+    //    Entity -> Dto
+    BeehiveDto getDto(Beehive entity);
+
+    //    Form -> Entity
+    @Mapping(target = "targetExample", source = "sourceExample")
+    Beehive getEntity(BeehiveForm form);
+}
   ```
+
+- @Mapping can be used to define a mapping between 2 properties with different names
 
 ## 5. Create Service
 

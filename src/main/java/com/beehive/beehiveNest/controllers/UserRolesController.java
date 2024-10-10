@@ -15,6 +15,6 @@ public class UserRolesController extends BaseController<UserRoleDto, UserRoleFor
     @Autowired
     public UserRolesController(UserRolesService userRolesService) {
         super(userRolesService);  // Injecting into the BaseController
-        this.userRolesService = userRolesService;  // Injecting into the CountriesController as well
+        this.userRolesService = userRolesService;  // Injecting into the controller as well
     }
 }
