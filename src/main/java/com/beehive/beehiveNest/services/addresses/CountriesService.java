@@ -1,9 +1,9 @@
 package com.beehive.beehiveNest.services.addresses;
 
-import com.beehive.beehiveNest.configuration.mappers.AddressesMapper;
 import com.beehive.beehiveNest.model.dtos.addresses.CountryDto;
 import com.beehive.beehiveNest.model.entities.address.Country;
 import com.beehive.beehiveNest.model.forms.addresses.CountryForm;
+import com.beehive.beehiveNest.model.mappers.AddressesMapper;
 import com.beehive.beehiveNest.repository.address.CountriesRepository;
 import com.beehive.beehiveNest.services.CrudService;
 import org.springframework.beans.factory.annotation.Autowired;

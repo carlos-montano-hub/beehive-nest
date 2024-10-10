@@ -1,11 +1,11 @@
 package com.beehive.beehiveNest.services.addresses;
 
-import com.beehive.beehiveNest.configuration.mappers.AddressesMapper;
 import com.beehive.beehiveNest.exceptions.DependencyNotFoundException;
 import com.beehive.beehiveNest.model.dtos.addresses.AddressDto;
 import com.beehive.beehiveNest.model.entities.address.Address;
 import com.beehive.beehiveNest.model.entities.address.City;
 import com.beehive.beehiveNest.model.forms.addresses.AddressForm;
+import com.beehive.beehiveNest.model.mappers.AddressesMapper;
 import com.beehive.beehiveNest.repository.address.AddressesRepository;
 import com.beehive.beehiveNest.repository.address.CitiesRepository;
 import com.beehive.beehiveNest.services.CrudService;

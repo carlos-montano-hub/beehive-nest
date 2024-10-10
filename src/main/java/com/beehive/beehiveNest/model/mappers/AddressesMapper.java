@@ -1,4 +1,4 @@
-package com.beehive.beehiveNest.configuration.mappers;
+package com.beehive.beehiveNest.model.mappers;
 
 import com.beehive.beehiveNest.model.dtos.addresses.AddressDto;
 import com.beehive.beehiveNest.model.dtos.addresses.CityDto;
