@@ -1,4 +1,4 @@
-package com.beehive.beehiveNest.configuration.mappers;
+package com.beehive.beehiveNest.model.mappers;
 
 import org.springframework.context.annotation.Configuration;
 

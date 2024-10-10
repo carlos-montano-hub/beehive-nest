@@ -1,4 +1,4 @@
-package com.beehive.beehiveNest.model.dtos;
+package com.beehive.beehiveNest.model.forms;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,10 +11,9 @@ import java.time.LocalDateTime;
 @Getter
 @ToString
 @EqualsAndHashCode
-public class MeasureDto {
-    private Long id;
+public class MeasureForm {
     private LocalDateTime time;
-    private BeehiveDto beehive;
+    private long beehiveId;
     private double temperature;
     private double humidity;
     private double weight;

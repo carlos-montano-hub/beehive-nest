@@ -3,9 +3,10 @@ package com.beehive.beehiveNest;
 import com.beehive.beehiveNest.configuration.DatabaseInitializer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
 //TODO add a proper logger
-@SpringBootApplication
+@SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 public class BeehiveNestApplication {
 
     public static void main(String[] args) {
