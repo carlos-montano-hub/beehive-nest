@@ -1,5 +1,6 @@
 package com.beehive.beehiveNest.model.dtos;
 
+import com.beehive.beehiveNest.model.dtos.addresses.AddressDto;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +13,6 @@ import lombok.ToString;
 public class BeehiveDto {
     private Long id;
     private String name;
-    private Long addressId;
-    private Long ownerUserId;
+    private AddressDto address;
+    private AppUserDto ownerUser;
 }
